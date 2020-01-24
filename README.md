@@ -2,4 +2,4 @@
 
 $ docker build -t simple-flask-app:latest .
 
-$ docker run -d -p 5000:5000 simple-flask-app
+$ docker run -d -p 3000:3000 simple-flask-app
