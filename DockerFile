@@ -1,0 +1,13 @@
+FROM python:3.6
+
+WORKDIR /HelloWorld
+
+COPY requirements.txt ./
+
+COPY HelloWorld.py .
+
+RUN pip3 install -r requirements.txt
+
+ENTRYPOINT  ["python"]
+
+CMD ["HelloWorld.py"]
